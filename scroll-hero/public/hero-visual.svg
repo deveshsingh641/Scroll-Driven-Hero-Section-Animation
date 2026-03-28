@@ -1,0 +1,59 @@
+<svg width="1600" height="650" viewBox="0 0 1600 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paintBody" x1="260" y1="120" x2="1360" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0A" />
+      <stop offset="1" stop-color="#3F3F46" />
+    </linearGradient>
+    <linearGradient id="paintGlass" x1="520" y1="120" x2="1120" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E4E4E7" stop-opacity="0.95" />
+      <stop offset="1" stop-color="#A1A1AA" stop-opacity="0.55" />
+    </linearGradient>
+    <radialGradient id="paintGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(820 490) rotate(90) scale(240 560)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.20" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Ground glow -->
+  <ellipse cx="820" cy="520" rx="560" ry="240" fill="url(#paintGlow)" />
+
+  <!-- Car shadow -->
+  <ellipse cx="820" cy="540" rx="470" ry="70" fill="#000000" fill-opacity="0.25" />
+
+  <!-- Car body -->
+  <path
+    d="M310 420C342 350 440 300 560 290H972C1108 290 1238 340 1320 410C1386 410 1450 448 1450 500V520C1450 542 1432 560 1410 560H1330C1312 560 1298 546 1296 528C1288 452 1228 402 1152 402C1076 402 1016 452 1008 528C1006 546 992 560 974 560H616C598 560 584 546 582 528C574 452 514 402 438 402C362 402 302 452 294 528C292 546 278 560 260 560H210C188 560 170 542 170 520V500C170 456 218 420 310 420Z"
+    fill="url(#paintBody)"
+  />
+
+  <!-- Cabin/glass -->
+  <path
+    d="M572 206C594 168 642 140 694 140H920C998 140 1072 182 1116 250L1148 300H548L572 206Z"
+    fill="url(#paintGlass)"
+  />
+
+  <!-- Highlights -->
+  <path
+    d="M352 438C396 374 482 338 582 330H960C1086 330 1200 366 1280 420"
+    stroke="#FFFFFF"
+    stroke-opacity="0.14"
+    stroke-width="18"
+    stroke-linecap="round"
+  />
+
+  <!-- Wheels -->
+  <g>
+    <circle cx="438" cy="540" r="86" fill="#0A0A0A" />
+    <circle cx="438" cy="540" r="60" fill="#27272A" />
+    <circle cx="438" cy="540" r="18" fill="#71717A" />
+  </g>
+  <g>
+    <circle cx="1152" cy="540" r="86" fill="#0A0A0A" />
+    <circle cx="1152" cy="540" r="60" fill="#27272A" />
+    <circle cx="1152" cy="540" r="18" fill="#71717A" />
+  </g>
+
+  <!-- Lights -->
+  <path d="M310 430C340 410 372 404 406 404H420V450H310V430Z" fill="#F4F4F5" fill-opacity="0.85" />
+  <path d="M1290 420H1390C1418 420 1440 440 1440 468V490H1290V420Z" fill="#F59E0B" fill-opacity="0.75" />
+</svg>
