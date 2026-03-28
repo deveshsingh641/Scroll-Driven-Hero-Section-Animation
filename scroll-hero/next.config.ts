@@ -5,11 +5,11 @@ const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "";
 const basePath = isGitHubActions && repoName ? `/${repoName}` : "";
 
 const nextConfig: NextConfig = {
-  output: "export",
+  ...(isGitHubActions ? { output: "export" as const } : {}),
   basePath,
   assetPrefix: basePath,
   images: {
-    unoptimized: true,
+    unoptimized: isGitHubActions,
   },
 };
 

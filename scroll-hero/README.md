@@ -38,5 +38,5 @@ Notes:
 
 ## Submission links
 
-- Live webpage: **TODO** (paste your GitHub Pages URL here)
-- GitHub repository: **TODO** (paste your repo URL here)
+- Live webpage: https://deveshsingh641.github.io/Scroll-Driven-Hero-Section-Animation/
+- GitHub repository: https://github.com/deveshsingh641/Scroll-Driven-Hero-Section-Animation
