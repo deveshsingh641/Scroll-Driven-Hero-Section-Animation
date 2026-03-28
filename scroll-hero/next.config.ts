@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   ...(isGitHubActions ? { output: "export" as const } : {}),
   basePath,
   assetPrefix: basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   images: {
     unoptimized: isGitHubActions,
   },

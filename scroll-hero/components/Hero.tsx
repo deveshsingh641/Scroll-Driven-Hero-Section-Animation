@@ -19,6 +19,8 @@ export default function Hero() {
   const visualWrapRef = useRef<HTMLDivElement | null>(null);
   const visualRef = useRef<HTMLDivElement | null>(null);
 
+  const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   const letters = useMemo(
     () => ["W", "E", "L", "C", "O", "M", "E", "I", "T", "Z", "F", "I", "Z", "Z"],
     [],
@@ -174,7 +176,7 @@ export default function Hero() {
           <div className="absolute -inset-x-8 -inset-y-12 rounded-[48px] bg-gradient-to-r from-zinc-100 to-white opacity-80 blur-2xl dark:from-zinc-900 dark:to-zinc-950" />
           <div ref={visualRef} className="relative will-change-transform">
             <Image
-              src="/hero-visual.svg"
+              src={`${publicBasePath}/hero-visual.svg`}
               alt="Stylized car visual"
               width={1600}
               height={650}
